@@ -1,0 +1,17 @@
+---
+projects:
+  - dir: account/dev/core_infra/vpc
+    name: vpc
+
+
+version: 3
+workflows:
+  vpc:
+    plan:
+      steps:
+        - init
+        - plan:
+    apply:
+      steps:
+        - apply
+
